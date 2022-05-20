@@ -242,6 +242,9 @@ a{
 }
 
 @media screen and (max-width: 556px){
+    header{
+        overflow-x: hidden}
+    
     .intro h1{
         font-size: 45px
     }
