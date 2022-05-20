@@ -248,10 +248,10 @@ a{
     
     .about-section{
         padding: 2rem 0;
-        overflow-x: hidden;
     }
     .about-me{
         flex-direction: column;
+        justify-content: center;
     }
 
     .my-img{
@@ -287,6 +287,7 @@ a{
     footer{
         padding: 2rem 0;
         padding-bottom: 5rem;
+        padding-left: 1rem;
         flex-direction: column;
     }
 
