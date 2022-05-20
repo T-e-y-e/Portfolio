@@ -242,20 +242,16 @@ a{
 }
 
 @media screen and (max-width: 556px){
-    header{
-        overflow-x: hidden}
-    
     .intro h1{
         font-size: 45px
     }
     
     .about-section{
-        padding: 2rem 1rem;
+        padding: 2rem 0;
         overflow-x: hidden;
     }
     .about-me{
         flex-direction: column;
-        overflow-x: hidden;
     }
 
     .my-img{
@@ -272,8 +268,7 @@ a{
     }
 
     .projects-section{
-        padding: 2rem 1rem;
-        overflow-x: hidden;
+        padding: 2rem 0;
     }
 
     .projects{
@@ -290,7 +285,7 @@ a{
     }
 
     footer{
-        padding: 2rem 1rem;
+        padding: 2rem 0;
         padding-bottom: 5rem;
         flex-direction: column;
     }
