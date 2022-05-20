@@ -242,6 +242,13 @@ a{
 }
 
 @media screen and (max-width: 556px){
+    .navbar-toggler{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+    
     .intro h1{
         font-size: 45px
     }
