@@ -262,7 +262,8 @@ a{
     .about{
         padding-left: 0px;
         padding-top: 2rem;
-        width: 90vw
+        width: 90vw;
+        overflow-x: hidden
     }
 
     .about btn{
@@ -289,7 +290,7 @@ a{
     footer{
         padding: 2rem 0;
         padding-bottom: 5rem;
-        padding-left: 2rem;
+        padding-left: 1rem;
         flex-direction: column;
     }
 
