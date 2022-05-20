@@ -242,6 +242,10 @@ a{
 }
 
 @media screen and (max-width: 556px){
+    .intro h1{
+        font-size: 40px
+    }
+    
     .about-section{
         padding: 2rem 1rem;
     }
