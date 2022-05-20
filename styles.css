@@ -251,9 +251,11 @@ a{
     
     .about-section{
         padding: 2rem 1rem;
+        overflow-x: hidden;
     }
     .about-me{
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .my-img{
@@ -271,6 +273,7 @@ a{
 
     .projects-section{
         padding: 2rem 1rem;
+        overflow-x: hidden;
     }
 
     .projects{
