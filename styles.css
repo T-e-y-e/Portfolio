@@ -297,6 +297,7 @@ a{
         padding-bottom: 5rem;
         padding-left: 1rem;
         flex-direction: column;
+        overflow-x: hidden
     }
 
     .socials{
