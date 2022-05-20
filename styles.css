@@ -262,6 +262,7 @@ a{
     .about{
         padding-left: 0px;
         padding-top: 2rem;
+        margin: auto
     }
 
     .about btn{
