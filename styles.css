@@ -246,6 +246,10 @@ a{
         font-size: 45px
     }
     
+    main{
+        overflow-x: hidden
+    }
+    
     .about-section{
         padding: 2rem 0;
         overflow-x: hidden
