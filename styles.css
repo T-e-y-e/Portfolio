@@ -248,6 +248,7 @@ a{
     
     .about-section{
         padding: 2rem 0;
+        overflow-x: hidden
     }
     .about-me{
         flex-direction: column;
