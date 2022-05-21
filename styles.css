@@ -246,6 +246,9 @@ a{
 }
 
 @media screen and (max-width: 556px){
+    header{
+       width: 100vw
+    }
     .navbar-toggler{
         position: absolute;
         top: 20px;
@@ -259,7 +262,7 @@ a{
     
     .about-section{
         padding: 2rem 0;
-        overflow-x: hidden
+        width: 100vw
     }
     .about-me{
         flex-direction: column;
@@ -284,6 +287,7 @@ a{
 
     .projects-section{
         padding: 2rem 0;
+        width: 100vw
     }
 
     .projects{
