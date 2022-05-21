@@ -242,12 +242,12 @@ a{
     header{
        width: 100vw
     }
-    .navbar-toggler{
+/*     .navbar-toggler{
         position: absolute;
         top: 10px;
         right: 8px;
         font-size: 30px;
-    }
+    } */
     
     .intro h1{
         font-size: 45px
