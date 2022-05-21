@@ -124,6 +124,10 @@ nav{
     transform: scale(1.05);
 }
 
+main{
+    width: 100%
+}
+
 /* about section */
 
 .about-section{
@@ -242,10 +246,6 @@ a{
 }
 
 @media screen and (max-width: 556px){
-    body{
-       width: 100vw;
-        overflow-x: hidden;
-    }
     .navbar-toggler{
         position: absolute;
         top: 20px;
@@ -255,10 +255,6 @@ a{
     
     .intro h1{
         font-size: 45px
-    }
-    
-    main{
-        overflow-x: hidden
     }
     
     .about-section{
@@ -308,7 +304,6 @@ a{
         padding-bottom: 5rem;
         padding-left: 1rem;
         flex-direction: column;
-        overflow-x: hidden
     }
 
     .socials{
