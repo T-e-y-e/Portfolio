@@ -28,11 +28,7 @@ header{
 
 nav{
     text-transform: uppercase;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 3;
+    position: relative;
 }
 
 .navbar-nav{
@@ -124,9 +120,6 @@ nav{
     transform: scale(1.05);
 }
 
-main{
-    width: 100%
-}
 
 /* about section */
 
@@ -251,8 +244,8 @@ a{
     }
     .navbar-toggler{
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 10px;
+        right: 8px;
         font-size: 30px;
     }
     
@@ -292,6 +285,7 @@ a{
 
     .projects{
         grid-template-columns: auto;
+        grid-column-gap: 0px;
         justify-content: center;
     }
 
