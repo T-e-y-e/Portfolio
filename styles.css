@@ -16,7 +16,7 @@ p{
 
 body{
     background-color: rgb(34, 32, 32);
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
 header{
@@ -242,6 +242,10 @@ a{
 }
 
 @media screen and (max-width: 556px){
+    body{
+       width: 100vw;
+        overflow-x: hidden;
+    }
     .navbar-toggler{
         position: absolute;
         top: 20px;
