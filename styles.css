@@ -16,7 +16,7 @@ p{
 
 body{
     background-color: rgb(34, 32, 32);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 header{
