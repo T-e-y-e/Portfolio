@@ -52,6 +52,12 @@ nav{
     color: #10bbcee1;
 }
 
+  .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
 .home{
     display: flex;
     justify-content: center;
