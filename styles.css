@@ -21,6 +21,7 @@ a{
 body{
     background-color: #222020;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header{
