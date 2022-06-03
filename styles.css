@@ -14,6 +14,10 @@ p{
     font-size: 14px;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background-color: #222020;
     overflow-x: hidden;
@@ -52,18 +56,18 @@ nav{
     color: #10bbcee1;
 }
 
-  .navbar-toggler:focus {
-  text-decoration: none;
-  outline: 0;
-  box-shadow: none;
-}
-
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80%;
 }
+
+.close{
+    display: none;
+}
+
+/* Home section */
 
 .intro{
     color: white;
@@ -198,17 +202,109 @@ h2::after{
     padding: 3rem 5rem;
 }
 
-.fas{
+.contact{
+    margin-top: 40px; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sub-heading{
+    font-size: 16px;
+    margin-bottom: 20px;
     color: #10bbcee1;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: rgb(180, 179, 179);
+  }
+  
+  .field input {
+    display: block;
+    width: 80%;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    height: 2.3rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 0.6rem;
+    background-color: rgb(63, 62, 62);
+    color: white;
+  }
+
+  .field input:focus{
+      border: none;
+      outline: none;
+      box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3)
+  }
+
+  textarea{
+      height: 6.5rem;
+      width: 80%;
+      border: none;
+      border-radius: 2px;
+      padding: 0.2rem 0.8rem;
+      font-size: 14px;
+      background-color: rgb(63, 62, 62);
+      color: white;
+  }
+
+  textarea:focus{
+    border: none;
+    outline: none;
+    box-shadow: inset 0 -1px 0 rgba(240, 239, 239, 0.3)
+  }
+
+  .sent{
+      color: rgb(154, 218, 154);
+      margin-top: 12px;
+      display: none;
+  }
+
+  .tick{
+      height: 14px;
+      margin-left: 5px;
+  }
+  
+  input[type="submit"] {
+    color: #ffffff;
+    background: #10bbcee1;
+    border: 2px solid rgba(0, 0, 0, 0);
+    display: block;
+    width: max-content;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 10px 30px;
+    margin-top: 1.5rem;
+    font-size: 14px;
+    border: none
+  }
+
+.fas, .twitter{
+    color: #10bbcee1;
+    margin-right: 12px;
+}
+
+.location{
+    height: 18px;
     margin-right: 12px;
 }
 
 footer{
     color: white;
-    display: flex;
     padding: 3rem 5rem;
     width: 100%;
     background-color: black;
+}
+
+.footer-section{
+    display: flex;
 }
 
 footer h6{
@@ -241,12 +337,14 @@ footer h6{
     color: #10bbcee1;
 }
 
-a{
-    text-decoration: none;
+.copyright p{
+    text-align: center;
+    color: rgb(71, 70, 70);
+    font-weight: 500;
 }
 
-.times{
-    display: none;
+.me a{
+    color: #10bbcee1;
 }
 
 @media screen and (max-width: 992px) {
@@ -260,21 +358,13 @@ a{
         text-align: center;
         background-color:  rgb(63, 62, 62);
         z-index: 10;
-        transition: left 1s;
+        transition: left 0.8s;
         align-items: center;
         padding-top: 100px;
     }
     
     .show{
         left: 0;
-    }
-    
-    .times{
-      display: block;
-      position: absolute;
-      font-size: 30px;
-      top: 20px;
-      right: 20px;
     }
 
     .navbar-toggler{
@@ -284,6 +374,14 @@ a{
         font-size: 30px;
         display: inline-block;
         text-align: center;
+    }
+    
+    .close{
+      display: block;
+      position: absolute;
+      font-size: 30px;
+      top: 20px;
+      right: 20px;
     }
 
     .intro h1{
@@ -310,10 +408,6 @@ a{
         padding-top: 2rem;
     }
 
-    .about btn{
-        padding-top: 2rem;
-    }
-
     .projects-section{
         padding: 2rem 0;
     }
@@ -331,10 +425,29 @@ a{
         padding: 2rem 1rem;
     }
 
+    .contact{
+        grid-template-columns: 90vw;
+        justify-content: center;
+    }
+
+    .field input{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        margin-bottom: 50px;
+    }
+
     footer{
-        padding: 2rem 0;
+        padding: 2rem 1rem;
         padding-bottom: 5rem;
-        padding-left: 1rem;
+    }
+
+    .footer-section{
         flex-direction: column;
     }
 

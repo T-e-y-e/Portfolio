@@ -31,7 +31,7 @@
                       <a class="nav-link me-md-3" href="#contact" @click="navigate">Contact</a>
                       <a class="nav-link me-md-3" href="#resume" @click="navigate">Resume</a>
                   </div>
-                  <div class="times">
+                  <div class="close">
                     <i class="fas fa-times" @click="navigate"></i>
                   </div>
               </div>
@@ -109,6 +109,10 @@
             <a href="https://themislaw.netlify.app"><h6>Themis Law</h6></a>
           </div>
           <div>
+            <img src="images/Projects/homepage.png" alt="quiz-app" class="project-img">
+            <a href="#"><h6>Quiz-App</h6></a>
+          </div>
+          <div>
             <img src="images/Projects/Victorya.png" alt="Victorya" class="project-img">
             <a href="https://victorya12.netlify.app"><h6>Victorya</h6></a>
           </div>
@@ -117,54 +121,83 @@
       <section class="contact-section" id="contact">
         <div>
           <h2>Contact</h2>
-          <p class="text-center">GET IN TOUCH</p>
         </div>
-        <div>
-          <p><span><i class="fas fa-envelope"></i></span> teyeetukudo@gmail.com</p>
+        <div class="contact">
+          <div>
+            <p class="sub-heading">GET IN TOUCH</p>
+            <form id="form">
+              <div class="field">
+                <label for="from_name">Name</label>
+                <input type="text" name="from_name" id="name" required>
+              </div>
+              <div class="field">
+                <label for="to_name">Email:</label>
+                <input type="email" name="to_name" id="email" required>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea type="text" name="message" id="message" required></textarea>
+              </div>
+              <div class="sent" id="sent">Message sent <span><img src="images/circle-check-solid.svg" alt="" class="tick"></span></div>
+              <input type="submit" id="button" value="Send Message" class="btn">
+            </form>
+          </div>
+          <div>
+            <p class="sub-heading">CONTACT DETAILS</p>
+            <p><span><i class="fas fa-envelope"></i></span> teyeetukudo@gmail.com</p>
+            <p><span><i class="fab fa-twitter twitter"></i></span>@Ty_Dev1</p>
+            <p><span><img src="images/location-dot-solid.svg" alt="" class="location"></span> Uyo, Nigeria</p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer id="resume">
-      <div>
+      <section class="footer-section">
         <div>
-          <h6>EXPERIENCE</h6>
-          <ul>
-            <li>Start Innovation Hub</li>
-            <p>Frontend Developer Intern, 2020</p>
-            <li>Sphenyx Digital Agency</li>
-            <p>Lead Frontend Developer, 2021 - present</p>
-          </ul>
+          <div>
+            <h6>EXPERIENCE</h6>
+            <ul>
+              <li>Start Innovation Hub</li>
+              <p>Frontend Developer Intern, 2020</p>
+              <li>Sphenyx Digital Agency</li>
+              <p>Lead Frontend Developer, 2021 - present</p>
+            </ul>
+          </div>
+          <div>
+            <h6 class="pt-lg-4">EDUCATION</h6>
+            <ul>
+              <li>University of Uyo</li>
+              <p>Undergraduate, Computer Engineering</p>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h6 class="pt-lg-4">EDUCATION</h6>
-          <ul>
-            <li>University of Uyo</li>
-            <p>Undergraduate, Computer Engineering</p>
-          </ul>
+        <div class="ms-lg-5 ps-lg-5">
+          <div class="skills">
+            <h6 class="mb-3">SKILLS</h6>
+            <p>Html/CSS</p>
+            <p>JavaScript</p>
+            <p>Bootstrap</p>
+            <p>Tailwind</p>
+            <p>SCSS/SASS</p>
+            <p>Git/Github</p>
+            <p>Vue js</p>
+            <p>React</p>
+          </div>
         </div>
-      </div>
-      <div class="ms-lg-5 ps-lg-5">
-        <div class="skills">
-          <h6 class="mb-3">SKILLS</h6>
-          <p>Html/CSS</p>
-          <p>JavaScript</p>
-          <p>Bootstrap</p>
-          <p>Tailwind</p>
-          <p>SCSS/SASS</p>
-          <p>Git/Github</p>
-          <p>Vue js</p>
-          <p>React</p>
+        <div class="ms-lg-5 ps-lg-5">
+          <h6 class="mb-lg-4 mt-3 mt-lg-0">SOCIALS</h6>
+          <div class="socials">
+            <a href="https://twitter.com/_Ty69_" class="social"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/big._.tee" class="social"><i class="fab fa-instagram"></i></a>  
+            <a href="https://linkedin.com/in/teye-etukudo-7b0550190" class="social"><i class="fab fa-linkedin"></i></a>          
+            <a href="https://github.com/T-e-y-e" class="social"><i class="fab fa-github"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="ms-lg-5 ps-lg-5">
-        <h6 class="mb-lg-4 mt-3 mt-lg-0">SOCIALS</h6>
-        <div class="socials">
-          <a href="https://twitter.com/Ty_Dev1" class="social"><i class="fab fa-twitter"></i></a>
-          <a href="" class="social"><i class="fab fa-instagram"></i></a>          
-          <a href="https://github.com/T-e-y-e" class="social"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
+      </section>
+      <div class="copyright mt-5">
+        <p>copyright&copy;2022 | Designed by <span class="me"><a href="#about">me</a></span></p>
+    </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
@@ -179,17 +212,43 @@
     },
   })
     </script>
+   <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   
+   <script type="text/javascript">
+     emailjs.init('zkg8zOCHX6c4Cqst_')
+   </script>
+  <script type="text/javascript">
+   const btn = document.getElementById('button');
+   const sent = document.getElementById('sent');
+
+   document.getElementById('form')
+  .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_vxmo4u9';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Message';
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+      sent.style.display = 'block'
+      setTimeout(() => sent.style.display ='none', 3000)
+    }, (err) => {
+      btn.value = 'Send Message';
+      console.log(JSON.stringify(err));
+    });
+});
+     </script>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
