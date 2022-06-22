@@ -21,7 +21,6 @@ a{
 body{
     background-color: #222020;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 header{
@@ -419,7 +418,7 @@ footer h6{
     }
 
     .project-img{
-        width: 95vw;
+        width: 90vw;
     }
 
     .contact-section{
@@ -445,6 +444,7 @@ footer h6{
 
     footer{
         padding: 2rem 1rem;
+        padding-bottom: 5rem;
     }
 
     .footer-section{
