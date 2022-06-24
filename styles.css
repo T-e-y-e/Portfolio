@@ -311,6 +311,11 @@ footer h6{
     color: #10bbcee1;
 }
 
+.inProgress{
+    font-size: 12px;
+    color: #a39f9f;
+}
+
 .skills p{
     font-weight: 300;
     padding: 0;
