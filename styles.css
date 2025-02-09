@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6{
 
 p{
     color: rgb(189, 184, 184);
-    font-size: 14px;
+    font-size: 18px;
 }
 
 a{
@@ -147,6 +147,7 @@ nav{
 .about{
     color: grey;
     padding-left: 60px;
+    font-size: 20px;
 }
 
 .my-img{
@@ -305,6 +306,9 @@ footer{
 
 .footer-section{
     display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center
 }
 
 footer h6{
@@ -324,6 +328,8 @@ footer h6{
 
 .socials{
     display: flex;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 .social{
@@ -453,10 +459,17 @@ footer h6{
     }
 
     .footer-section{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center
     }
 
     .socials{
         margin-top: 1rem;
+    }
+
+    .mx-auto {
+        margin: auto;
     }
 }
